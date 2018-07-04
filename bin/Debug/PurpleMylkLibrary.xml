@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PurpleMylkLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Taskstatus">
+            <summary>
+            The Taskstatus is needed to evaluate each task. It will act as a return type.
+            Options: Success,Failure,Waiting.
+            </summary>
+        </member>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Task">
+            <summary>
+            Is the base class all tasks derrive from.
+            </summary>
+        </member>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Action">
+             <summary>
+             The action is the leaf/end Task of our Behavior Tree, it is
+             the element that actually executes a given behavior.
+             this script is used as a generic which we will then pass a delegate.
+             Important for making this approach work is the action delegate.
+             You can implement whatever logic you want, however your method has to
+            return a Taskstatus in order to work.
+             </summary>
+        </member>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Inverter">
+             <summary>
+             An Inverter is a Decorator Task and therefore can only have 
+             one child.The Inverter works like the ! Operator.It turns
+             the result into its opposite if its either Success or Failure.
+            
+             However, Waiting will be handled regularly.
+             </summary>
+        </member>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Limiter">
+            <summary>
+            A Limiter is a Decorator Task and therefore can only have
+            one child. The Limiter evaluates its child only for a set 
+            amount of calls. Once that amount is reached, it will never
+            evaluate again and always return Failure for its child
+            from that point on
+            </summary>
+        </member>
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Repeater">
+            <summary>
+             A repeater is a Decorator task and therefore can only have one child.
+            The repeater evaluates its child unitl it either returns Failure or Success.
+            </summary>
+        </member>
+        <!-- Ungültiger XML-Kommentar wurde für den Member "T:PurpleMylkLibrary.BehaviorTrees.Selector" ignoriert -->
+        <member name="T:PurpleMylkLibrary.BehaviorTrees.Sequence">
+             <summary>
+             The Sequence is a composite Task and therefore can possibly have one or more
+             childtasks, thats why we use a List to hold all the children.
+            
+             During the evaluation we picture all of the children as Success, only if
+             one of them evaluate to failure the entire sequence fails.
+             </summary>
+        </member>
+    </members>
+</doc>

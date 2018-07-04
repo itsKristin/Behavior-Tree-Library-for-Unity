@@ -1,0 +1,8 @@
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\bin\Debug\PurpleMylkLibrary.xml
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\bin\Debug\PurpleMylkLibrary.dll
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\bin\Debug\PurpleMylkLibrary.pdb
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\bin\Debug\UnityEngine.dll
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\bin\Debug\UnityEngine.xml
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\obj\Debug\PurpleMylkLibrary.csproj.CoreCompileInputs.cache
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\obj\Debug\PurpleMylkLibrary.dll
+C:\Users\itsMi\source\repos\PurpleMylkLibrary\PurpleMylkLibrary\obj\Debug\PurpleMylkLibrary.pdb
